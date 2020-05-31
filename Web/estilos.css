@@ -1,0 +1,64 @@
+﻿body 
+{
+    background-color:antiquewhite;
+    font-family: 'Segoe UI';
+}
+
+.barra
+{
+   height:80px;
+   width:100%;
+   background-color:chocolate;
+}
+
+.botonCarrito
+{
+    margin-top: 13px;
+    margin-left: 30px;
+    height:55px;
+    width:100px;
+}
+
+.cantArt 
+{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right:100px;
+
+}
+
+
+.titulo
+{
+    text-align:center;
+    margin-top: 16px;
+    font-size:60px;
+    font-family:'Segoe UI';
+}
+
+.conBus
+{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.centrar
+{
+    margin-top:50px;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.trans 
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.subtotal
+{
+    font-size: 30px;
+    font-weight:600;
+}
