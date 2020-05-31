@@ -17,11 +17,10 @@ namespace Web
         public Carrito carrito2 = new Carrito();
         int cantItemsCarrito;
         float total = 0;
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             carrito2 = (Carrito)Session[Session.SessionID + "carrito"];
-            
 
             if (!IsPostBack)    //si es la primera vez que carga la pagina
             {
@@ -61,6 +60,7 @@ namespace Web
             String codArt = ((Button)sender).CommandArgument;
             carrito2.listaCarrito.RemoveAt(carrito2.listaCarrito.FindIndex(x => x.codigo == codArt));
             Session.Add(Session.SessionID + "carrito", carrito2);
+            Response.Redirect("pantallaDos.aspx");
         }
     }
 }

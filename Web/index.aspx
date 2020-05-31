@@ -43,9 +43,9 @@
                     </div>
                     <div>
                         <asp:Button Text="Buscar" runat="server" 
-                            id="btnBuscar" OnClick="btnBuscar_Click"/>
+                            id="btnBuscar" OnClick="btnBuscar_Click" CssClass="btn btn-danger"/>
                         <asp:Button Text="Reiniciar" runat="server" 
-                            id="btnReiniciar" OnClick="btnReiniciar_Click"/>
+                            id="btnReiniciar" OnClick="btnReiniciar_Click" CssClass="btn btn-danger"/>
                     </div>
                 </div>
             </div>
