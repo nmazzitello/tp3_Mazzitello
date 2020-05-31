@@ -21,14 +21,14 @@ namespace Web
         protected void Page_Load(object sender, EventArgs e)
         {
             carrito2 = (Carrito)Session[Session.SessionID + "carrito"];
-            repeaterCarri.DataSource = carrito2.listaCarrito;
-            repeaterCarri.DataBind();
+            
 
-            //if (!IsPostBack)    //si es la primera vez que carga la pagina
-            //{
+            if (!IsPostBack)    //si es la primera vez que carga la pagina
+            {
                 if (carrito2!=null)
                 {
-                    
+                    repeaterCarri.DataSource = carrito2.listaCarrito;
+                    repeaterCarri.DataBind();
                     cantItemsCarrito += carrito2.listaCarrito.Count;
 
                     for (int x = 0; x < cantItemsCarrito; x++)
@@ -38,7 +38,7 @@ namespace Web
 
                     lblTotal.Text = "EL TOTAL A PAGAR ES $" + total;
                 }
-           // }
+            }
         }
 
         //EVENTO PARA SEGUIR AGREGANDO COSAS AL CARRITO --> 100%
